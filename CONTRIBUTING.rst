@@ -36,8 +36,8 @@ is open to whoever wants to implement it.
 Write Documentation
 ~~~~~~~~~~~~~~~~~~~
 
-pyfin could always use more documentation, whether as part of the
-official pyfin docs, in docstrings, or even on the web in blog posts,
+yaopt could always use more documentation, whether as part of the
+official yaopt docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 Submit Feedback
@@ -55,17 +55,17 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `pyfin` for local development.
+Ready to contribute? Here's how to set up `yaopt` for local development.
 
-1. Fork the `pyfin` repo on GitHub.
+1. Fork the `yaopt` repo on GitHub.
 2. Clone your fork locally::
 
-    $ git clone git@github.com:your_name_here/pyfin.git
+    $ git clone git@github.com:your_name_here/yaopt.git
 
 3. Install your local copy into a virtualenv. Assuming you have virtualenvwrapper installed, this is how you set up your fork for local development::
 
-    $ mkvirtualenv pyfin
-    $ cd pyfin/
+    $ mkvirtualenv yaopt
+    $ cd yaopt/
     $ python setup.py develop
 
 4. Create a branch for local development::
@@ -76,7 +76,7 @@ Ready to contribute? Here's how to set up `pyfin` for local development.
 
 5. When you're done making changes, check that your changes pass flake8 and the tests, including testing other Python versions with tox::
 
-    $ flake8 pyfin tests
+    $ flake8 yaopt tests
     $ python setup.py test
     $ tox
 
@@ -108,4 +108,4 @@ Tips
 
 To run a subset of tests::
 
-    $ python -m unittest tests.test_pyfin
+    $ python -m unittest tests.test_yaopt
