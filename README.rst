@@ -11,7 +11,7 @@
 
 
 ### Features
--------
+------------
 
 * Option valuation w/ Black-Scholes, lattice (binomial tree), and Monte Carlo simulation models.
 * Basic Greeks calculation (delta, theta, rho, vega, gamma) across each valuation model.
