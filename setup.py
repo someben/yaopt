@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='yaopt',
-    version='0.1.2',
+    version='0.1.3',
     description='Basic options pricing in Python',
     long_description=readme + '\n\n' + history,
     author='Ben Gimpert',

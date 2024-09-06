@@ -13,3 +13,9 @@ History
 
 * Fix to Black-Scholes implied volatility.
 
+0.1.3 (2024-09-06)
+---------------------
+
+* Fix to README.
+
+
