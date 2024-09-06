@@ -8,7 +8,7 @@ except ImportError:
     from distutils.core import setup
 
 
-readme = open('README.rst').read()
+readme = open('README.md').read()
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
 requirements = [
@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='yaopt',
-    version='0.1.0',
+    version='0.1.1',
     description='Basic options pricing in Python',
     long_description=readme + '\n\n' + history,
     author='Ben Gimpert',
