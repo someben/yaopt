@@ -9,11 +9,11 @@ except ImportError:
 
 
 readme = open('README.md').read()
-history = open('HISTORY.rst').read().replace('.. :changelog:', '')
+history = open('HISTORY.md').read().replace('.. :changelog:', '')
 
 requirements = [
         'numpy',
-        'scipy',
+        'scipy'u
 ]
 
 test_requirements = [
@@ -21,7 +21,7 @@ test_requirements = [
 
 setup(
     name='yaopt',
-    version='0.1.1',
+    version='0.1.2',
     description='Basic options pricing in Python',
     long_description=readme + '\n\n' + history,
     author='Ben Gimpert',
