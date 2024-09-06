@@ -191,6 +191,19 @@ class TestOption(unittest.TestCase):
         opt_kwargs['vol'] = Option.imply_volatility(premium, **opt_kwargs)
         self.assertAlmostEqual(premium, Option(**opt_kwargs).run_model(model=OptionModel.BINOMIAL_TREE)[OptionMeasure.VALUE], delta=0.01)
 
+        self.assertAlmostEqual(
+            0.36,
+            Option.imply_volatility(
+                10.10,
+                opt_type=OptionType.PUT,
+                spot0=90,
+                strike=100,
+                mat=1.0 / 12,
+                riskless_rate=0.10,
+                exer_type=OptionExerciseType.EUROPEAN,
+                model=OptionModel.BLACK_SCHOLES,
+            ), delta=0.01)
+
 
     def test_model_cache(self):
         opt = Option(opt_type=OptionType.CALL, spot0=90, strike=100, mat=3.0 / 12,

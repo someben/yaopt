@@ -136,7 +136,7 @@ class Option(Instrument):
         return result
 
 
-    def black_scholes(self):
+    def black_scholes(self, sens_degree=None):
         assert self.exer_type == OptionExerciseType.EUROPEAN, \
             "Black-Scholes does not support early exercise"
         assert (self.yield_ is None) or is_number(self.yield_), \
