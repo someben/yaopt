@@ -1,25 +1,21 @@
 #######
 yaopt
-#######
-
-.. image:: https://badge.fury.io/py/yaopt.png
-   :target: http://badge.fury.io/py/yaopt
-.. image:: https://travis-ci.org/someben/yaopt.png?branch=master
-   :target: https://travis-ci.org/someben/yaopt
-.. image:: https://pypip.in/d/yaopt/badge.png
-   :target: https://pypi.python.org/pypi/yaopt
+#######                                      
+                                         
+.. image:: https://badge.fury.io/py/yaopt.png                                                                   
+   :target: http://badge.fury.io/py/yaopt                                                   
 
 
 Basic Options Pricing (in Python)
 ***********************************
 
-"Oh cool. Probably a little easier than spinning up the QuantLib stack." -- `Wes McKinney <https://github.com/wesm>`, creator of `Pandas <https://github.com/pydata/pandas>`
+“Oh cool. Probably a little easier than spinning up the QuantLib stack.” — `Wes McKinney <https://github.com/wesm>`_, creator of `Pandas <https://github.com/pydata/pandas>`_.
 
 
 Features
 ==========
 
-#. Option valuation w/ Black-Scholes, lattice (binomial tree), and Monte Carlo simulation models.
+#. Option valuation w/ Black-Scholes, lattice (binomial tree), and Monte Carlo simulation models.                                  
 #. Basic Greeks calculation (delta, theta, rho, vega, gamma) across each valuation model.
 #. Discrete dividends support in the lattice (binomial tree) and Monte Carlo simulation models.
 #. Early exercise (American options) support in Monte Carlo simulation through the Longstaff-Schwartz technique.
