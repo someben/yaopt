@@ -13,7 +13,7 @@ history = open('HISTORY.md').read().replace('.. :changelog:', '')
 
 requirements = [
         'numpy',
-        'scipy'u
+        'scipy',
 ]
 
 test_requirements = [
