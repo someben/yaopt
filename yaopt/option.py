@@ -110,7 +110,7 @@ class Option(Instrument):
             raise LowPremiumException()
         if (min_diff < 0) and (max_diff < 0):
             raise HighPremiumException()
-        return scipy.optimize.bisect(obj_fn, 0.0001, max_vol, xtol=0.0025)
+        return scipy.optimize.bisect(obj_fn, min_vol, max_vol, xtol=0.0025)
 
     def run_model(self, model=OptionModel.BINOMIAL_TREE, **model_kwargs):
         curr_param_hash = self.param_hash()
